@@ -23,6 +23,7 @@ namespace CasinoProject.Controllers
         /// </summary>
         [HttpGet("/balance")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<GetCasinoBalanceVM>> GetCasinoBalanceAsync(CancellationToken cancellationToken)
         {
